@@ -5,7 +5,7 @@
   "dependencies": {
     "antd": "^3.19.7",
     "casperjs": "^1.1.4",
-    "download": "^7.1.0",
+    "express": "^4.17.1",
     "ical": "^0.6.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
