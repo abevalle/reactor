@@ -1,0 +1,48 @@
+.App {
+}
+
+.header {
+  background-color:#fff;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+.date {
+  text-align: center;
+}
+
+.conferenceRoom {
+  text-align: center;
+}
+
+.conferenceRoom > h1 {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.conferenceRoom > p {
+  margin-bottom: 0px;
+}
+
+.eventName > h2 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.eventName > h3 {
+  font-size: 20px;
+
+}
+
+.eventName > h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+body {
+background-color: #f1f1f1;
+}
