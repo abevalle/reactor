@@ -15,6 +15,7 @@ function App() {
       <Row>
         <Col span={24}>
           <Events></Events>
+          <Events1></Events1>
         </Col>
 
       </Row>

@@ -2,9 +2,10 @@ import React from 'react';
 import 'antd/dist/antd.css'
 import { Row, Col, Progress, Card } from 'antd'
 
-const name = "Rhino"
-const time = "8:30a - 5:00pm"
-const conferenceRoom = "A"
+const name = "Eventr"
+const start = "9:00am"
+const end = "5:00pm"
+const conferenceRoom = 'C'
 
 function Events() {
     return (
@@ -17,7 +18,7 @@ function Events() {
                                 <Col span={22}>
                                     <div className='eventName'>
                                         <h2>{name}</h2>
-                                        <h3>{time}</h3>
+                                        <h3>{start}-{end}</h3>
                                     </div>
                                 </Col>
                                 <Col span={2}>

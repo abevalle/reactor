@@ -10,14 +10,14 @@ function Events1() {
                     <Card>
                         <Col span={24}>
                             <Row>
-                                <Col span={12}>
+                                <Col span={19}>
                                     <div className='eventName'>
                                         <h2>RhinoDox</h2>
                                         <h3>Conference Room: </h3>
                                         <h4>9:30am - 5:00pm</h4>
                                     </div>
                                 </Col>
-                                <Col span={6} push={6}>
+                                <Col span={5}>
                                     <Progress type="circle" percent={50} strokeColor="orange" format={() => '1:35'}/>
                                 </Col>
                             </Row>
