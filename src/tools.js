@@ -1,5 +1,3 @@
-import { async } from "q";
-
 //Converts 24 hour time to 12 hour time
 function to12(time) {
     if (time >= 13) {
@@ -16,3 +14,5 @@ function amPm(time) {
         
     }
 }
+
+const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']

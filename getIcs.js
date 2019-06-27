@@ -1,9 +1,9 @@
 //NPM Packages
 const ical = require('ical')
 const date = new Date();
-// const express = require('express')
-// const app = express()
-// const port = 3000;
+const express = require('express')
+const app = express()
+const port = 3000;
 
 const url = 'http://technexus.yarooms.com/ical/2dbc59mhcllvp56ejxt2o72vt.ics'
 
@@ -21,35 +21,34 @@ ical.fromURL(url, {}, function(err, data) {
             const today = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
 
             // This object contains event details
-            const event = {
-                "name": ev.summary,
-                "description": ev.description,
-                "location": ev.location,
-                "date": {
+            let event = {
+                'name': ev.summary,
+                'description': ev.description,
+                'location': ev.location,
+                'date': {
                     'yyyy': ev.start.getFullYear(),
                     'mm': ev.start.getMonth(),
                     'dd': ev.start.getDate(),
                 },
-                "start": {
-                    "hh": ev.start.getHours(),
-                    "mm": ev.start.getMinutes(),
-                    "ss": ev.start.getSeconds()
+                'start': {
+                    'hh': ev.start.getHours(),
+                    'mm': ev.start.getMinutes(),
+                    'ss': ev.start.getSeconds()
                 },
-                "end": {
-                    "hh": ev.end.getHours(),
-                    "mm": ev.end.getMinutes(),
-                    "ss": ev.end.getSeconds()
+                'end': {
+                    'hh': ev.end.getHours(),
+                    'mm': ev.end.getMinutes(),
+                    'ss': ev.end.getSeconds()
                 }
             }
 
-            console.log(event)
 
             // This puts together event year, month, and day
             const evStartDate = `${event.date.yyyy}-${event.date.mm}-${event.date.dd}`
 
             // This if statement is to remove any events that are not today
             if (evStartDate == today ) {
-                return JSON.stringify(event)
+
             }
         }
     }
