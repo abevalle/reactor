@@ -3,7 +3,7 @@ const ical = require('ical')
 const date = new Date();
 const express = require('express')
 const app = express()
-const port - 3000;
+const port = 3005;
 
 const url = 'http://technexus.yarooms.com/ical/2dbc59mhcllvp56ejxt2o72vt.ics'
 
@@ -54,7 +54,7 @@ ical.fromURL(url, {}, function(err, data) {
 
             // This if statement is to remove any events that are not today
             if (evStartDate == today ) {
-                //This publishes to the api
+                console.log(event)
 
             }
         }
