@@ -12,13 +12,19 @@ const today = {
     'date': date.getDate(),
     'year': date.getFullYear()
 }
+const firm = {
+    'name': 'Technexus', 
+    'options': {
+        'background': '#f1f1f1'
+    }
+}
 
 function Header() {
     return (
         <div className="header">
             <Row>
                 <Col span={12} push={1}>
-                    <h1>Today at TechNexus</h1>
+                    <h1>Today at {firm.name}</h1>
                 </Col>
                 <Col span={3} push={8}>
                     <div className="date">

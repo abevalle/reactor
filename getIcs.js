@@ -6,6 +6,8 @@ const app = express()
 const port = 3000;
 
 const url = 'http://technexus.yarooms.com/ical/2dbc59mhcllvp56ejxt2o72vt.ics'
+const evArr = new Array();
+
 
 //downloads .ics file from ical
 ical.fromURL(url, {}, function(err, data) {
@@ -48,9 +50,8 @@ ical.fromURL(url, {}, function(err, data) {
 
             // This if statement is to remove any events that are not today
             if (evStartDate == today ) {
-
+                evArr.push(event)
             }
         }
     }
-
 });
